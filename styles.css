@@ -242,18 +242,6 @@ img {
   transform: translateX(-50%);
 }
 
-.hero::after {
-  position: absolute;
-  right: 34%;
-  bottom: 42px;
-  z-index: -1;
-  width: 10px;
-  height: 10px;
-  background: var(--coral);
-  box-shadow: 10px 0 var(--coral), 20px 0 var(--lime), 20px -10px var(--lime), 30px -10px var(--blue), 40px -10px var(--blue), 40px -20px var(--violet);
-  content: "";
-}
-
 .availability-pill {
   display: inline-flex;
   align-items: center;
@@ -1178,9 +1166,32 @@ body.lightbox-open {
   :root { --container: min(100% - 32px, 680px); }
   .header-inner { min-height: 66px; }
   .brand-text, .header-contact { display: none; }
-  .hero { grid-template-columns: 1fr; min-height: auto; padding-block: 48px 56px; }
-  .hero-copy { order: 1; }
-  .hero-visual { order: 2; width: 82%; max-width: 320px; justify-self: center; margin-top: 16px; }
+  .hero {
+    grid-template-columns: minmax(0, 1fr) clamp(90px, 24vw, 108px);
+    min-height: auto;
+    align-items: start;
+    column-gap: 14px;
+    row-gap: 0;
+    padding-block: 40px 48px;
+  }
+  .hero-copy { display: contents; }
+  .hero-copy.reveal { opacity: 1; transform: none; }
+  .availability-pill { grid-column: 1 / -1; grid-row: 1; justify-self: start; }
+  .hero-kicker { grid-column: 1; grid-row: 2; }
+  .hero h1 { grid-column: 1; grid-row: 3; }
+  .hero-summary { grid-column: 1 / -1; grid-row: 4; }
+  .hero-facts { grid-column: 1 / -1; grid-row: 5; }
+  .hero-actions { grid-column: 1 / -1; grid-row: 6; }
+  .hero-links { grid-column: 1 / -1; grid-row: 7; }
+  .hero-visual {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    width: 100%;
+    max-width: none;
+    align-self: end;
+    justify-self: end;
+    margin: 12px 0 0;
+  }
   .hero h1 { font-size: clamp(44px, 12.8vw, 64px); }
   .hero-summary { font-size: 16px; }
   .section-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 42px; }
@@ -1201,10 +1212,9 @@ body.lightbox-open {
 }
 
 @media (max-width: 440px) {
-  .hero h1 { font-size: 45px; }
+  .hero h1 { font-size: clamp(38px, 11vw, 45px); }
   .hero-actions { flex-direction: column; }
   .button { width: 100%; justify-content: space-between; }
-  .hero-visual { width: 100%; }
   .hero-facts { grid-template-columns: 1fr; gap: 12px; }
   .project-card { grid-template-columns: 1fr; }
   .project-number, .project-action { grid-column: 1; }
