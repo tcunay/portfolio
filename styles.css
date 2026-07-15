@@ -1068,6 +1068,30 @@ body.lightbox-open {
   content: "";
 }
 
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 42px;
+}
+
+.skill-group {
+  --skill-color: var(--lime);
+  min-width: 0;
+}
+
+.skill-group:nth-child(2) { --skill-color: var(--coral); }
+.skill-group:nth-child(3) { --skill-color: var(--blue); }
+.skill-group:nth-child(4) { --skill-color: var(--violet); }
+
+.skill-group h3 {
+  margin: 0 0 14px;
+  color: var(--skill-color);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1075,7 +1099,6 @@ body.lightbox-open {
 }
 
 .skills-grid span {
-  --skill-color: var(--lime);
   display: flex;
   min-height: 46px;
   align-items: center;
@@ -1089,10 +1112,6 @@ body.lightbox-open {
   font-weight: 700;
   transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
-
-.skills-grid span:nth-child(4n + 2) { --skill-color: var(--coral); }
-.skills-grid span:nth-child(4n + 3) { --skill-color: var(--blue); }
-.skills-grid span:nth-child(4n + 4) { --skill-color: var(--violet); }
 
 .skills-grid span:hover {
   border-color: var(--skill-color);
@@ -1245,6 +1264,7 @@ body.lightbox-open {
   .timeline-content { margin-top: 22px; }
   .timeline-title { flex-direction: column; }
   .skills-panel { padding: 22px; }
+  .skills-groups { grid-template-columns: 1fr; gap: 28px; }
   .skills-grid { gap: 8px; }
   .skills-grid span { min-height: 42px; padding-inline: 13px; }
   .contact-footer { flex-direction: column; margin-top: 80px; }
