@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Геворг Гулканян - Senior Unity Developer. Архитектура, оптимизация, клиент-серверные игры и техническое лидерство."
+    />
+    <meta name="theme-color" content="#070a13" />
+    <title>Геворг Гулканян - Senior Unity Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow--one" aria-hidden="true"></div>
+    <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="На главную" data-i18n-aria="homeAria">
+          <span class="brand-mark">GG</span>
+          <span class="brand-text">Unity Developer</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Основная навигация" data-i18n-aria="mainNavAria">
+          <a href="#projects" data-i18n="navProjects">Проекты</a>
+          <a href="#experience" data-i18n="navExperience">Опыт</a>
+          <a href="#skills" data-i18n="navSkills">Навыки</a>
+          <a href="#contact" data-i18n="navContact">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switcher" role="group" aria-label="Выбор языка" data-i18n-aria="languageAria">
+            <button class="language-button is-active" type="button" data-language="ru" aria-pressed="true">RU</button>
+            <span aria-hidden="true">/</span>
+            <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="header-contact" href="https://t.me/GevorgGulkanyan" target="_blank" rel="noreferrer">
+            <span data-i18n="writeMe">Написать</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy reveal">
+          <div class="availability-pill">
+            <span class="availability-dot" aria-hidden="true"></span>
+            <span data-i18n="availability">Открыт к интересным проектам</span>
+          </div>
+
+          <p class="hero-kicker">Senior Unity Developer · Lead</p>
+          <h1>
+            <span data-i18n="firstName">Геворг</span>
+            <span class="outline-text" data-i18n="lastName">Гулканян</span>
+          </h1>
+          <p class="hero-summary" data-i18n="heroSummary">
+            Довожу проекты от идеи до релиза и ответственно отношусь к качеству результата на каждом
+            этапе разработки.
+          </p>
+
+          <div class="hero-facts" aria-label="Ключевые факты" data-i18n-aria="heroFactsAria">
+            <div class="hero-fact">
+              <strong>6+</strong>
+              <span data-i18n="statExperience">лет коммерческой разработки</span>
+            </div>
+            <div class="hero-fact">
+              <strong>0→1</strong>
+              <span data-i18n="statFromScratch">запуск продуктов с нуля</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button--primary" href="#projects">
+              <span data-i18n="viewProjects">Смотреть проекты</span>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero-links" aria-label="Профессиональные профили" data-i18n-aria="profilesAria">
+            <a href="https://t.me/GevorgGulkanyan" target="_blank" rel="noreferrer">Telegram ↗</a>
+            <a href="mailto:gulkanyangk@gmail.com">Gmail ↗</a>
+            <a href="https://github.com/tcunay" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://gitlab.com/gulkanyangk" target="_blank" rel="noreferrer">GitLab ↗</a>
+            <a href="https://www.linkedin.com/in/gevorg-gulkanyan" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal--delay">
+          <img
+            class="portrait"
+            src="assets/profile-pixel.png"
+            alt="Геворг Гулканян"
+            data-i18n-alt="portraitAlt"
+          />
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">/ 01</p>
+            <h2 data-i18n="projectsTitle">Избранные проекты</h2>
+          </div>
+          <p class="section-lead" data-i18n="projectsLead">
+            Коммерческие продукты, где я отвечал за архитектуру, разработку и техническое качество.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--lime project-card--with-gallery reveal">
+            <div class="project-number">01</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>1XGames</span>
+                <span>2022 - <span data-i18n="present">сейчас</span></span>
+              </div>
+              <h3>1XGames Mobile</h3>
+              <p data-i18n="project1Description">
+                Приложение, построенное с нуля: архитектура, координация разработчиков, оптимизация,
+                шейдеры и интеграция нативных Android-плагинов.
+              </p>
+              <ul class="tag-list" aria-label="Технологии проекта" data-i18n-aria="technologiesAria">
+                <li>UniTask</li><li>UniRx</li><li>Addressables</li><li>Firebase</li><li>CI/CD</li>
+              </ul>
+            </div>
+            <div class="project-action">
+              <a href="https://1xgames.online/mobile" target="_blank" rel="noreferrer" aria-label="Открыть сайт 1XGames" data-i18n-aria="project1LinkAria">↗</a>
+            </div>
+            <div class="project-gallery-shell">
+              <div class="gallery-controls">
+                <button class="gallery-nav gallery-nav--prev" type="button" aria-label="Прокрутить галерею влево" data-i18n-aria="galleryPrevAria"><span aria-hidden="true">←</span></button>
+                <button class="gallery-nav gallery-nav--next" type="button" aria-label="Прокрутить галерею вправо" data-i18n-aria="galleryNextAria"><span aria-hidden="true">→</span></button>
+              </div>
+              <div class="project-gallery" aria-label="Галерея проекта 1XGames" data-i18n-aria="gallery1Aria" tabindex="0">
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-title="1XGames Platform" aria-label="Открыть экран платформы 1XGames" data-i18n-aria="openPlatformAria">
+                <img src="assets/1xgames/platform-animation.webp" alt="Каталог игр в приложении 1XGames" data-i18n-alt="platformAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong>1XGames Platform</strong><small data-i18n="platformScreen">Каталог игр</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-title="Sea Treasures" aria-label="Открыть игровой экран Sea Treasures" data-i18n-aria="openSeaAria">
+                <img src="assets/1xgames/sea-treasures.webp" alt="Игровой экран Sea Treasures" data-i18n-alt="seaAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong>Sea Treasures</strong><small data-i18n="gameScreen">Игровой экран</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-title="Wild Fruits" aria-label="Открыть игровой экран Wild Fruits" data-i18n-aria="openWildAria">
+                <img src="assets/1xgames/wild-fruits.webp" alt="Игровой экран Wild Fruits" data-i18n-alt="wildAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong>Wild Fruits</strong><small data-i18n="gameScreen">Игровой экран</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-title="Yahtzee" aria-label="Открыть игровой экран Yahtzee" data-i18n-aria="openYahtzeeAria">
+                <img src="assets/1xgames/yahtzee.webp" alt="Игровой экран Yahtzee" data-i18n-alt="yahtzeeAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong>Yahtzee</strong><small data-i18n="gameScreen">Игровой экран</small></span>
+              </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--violet reveal" id="fantasy-hearts">
+            <div class="project-number">02</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Appfox</span>
+                <span>2021 - 2022</span>
+              </div>
+              <h3>Fantasy Hearts</h3>
+              <p data-i18n="project2Description">
+                Многопользовательская 2D-игра с пошаговыми боями. Разработка с нуля и выпуск на
+                нескольких платформах.
+              </p>
+              <ul class="tag-list" aria-label="Технологии проекта" data-i18n-aria="technologiesAria">
+                <li>Client-Server</li><li>Zenject</li><li>URP</li><li>Unity Tests</li>
+              </ul>
+            </div>
+            <div class="project-action">
+              <a href="https://store.steampowered.com/app/3258090/Fantasy_Hearts/?l=russian" target="_blank" rel="noreferrer" aria-label="Открыть Fantasy Hearts в Steam" data-i18n-aria="project2LinkAria">↗</a>
+            </div>
+            <div class="project-gallery-shell">
+              <div class="gallery-controls">
+                <button class="gallery-nav gallery-nav--prev" type="button" aria-label="Прокрутить галерею влево" data-i18n-aria="galleryPrevAria"><span aria-hidden="true">←</span></button>
+                <button class="gallery-nav gallery-nav--next" type="button" aria-label="Прокрутить галерею вправо" data-i18n-aria="galleryNextAria"><span aria-hidden="true">→</span></button>
+              </div>
+              <div class="project-gallery" aria-label="Галерея проекта Fantasy Hearts" data-i18n-aria="gallery2Aria" tabindex="0">
+              <button class="gallery-shot gallery-shot--video" type="button" data-video-lightbox data-lightbox-brand="Fantasy Hearts" data-lightbox-title="Gameplay" aria-label="Открыть запись игрового процесса Fantasy Hearts" data-i18n-aria="fantasyGameplayAria">
+                <video class="gallery-video" src="assets/fantasy-hearts/gameplay-loop.mp4" poster="assets/fantasy-hearts/tactical-battle.webp" muted loop autoplay playsinline preload="metadata" aria-hidden="true"></video>
+                <span class="gallery-caption"><strong data-i18n="gameplayLoop">Геймплей</strong><small>Loop</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="Fantasy Hearts" data-lightbox-title="Tactical Battle" aria-label="Открыть тактический бой Fantasy Hearts" data-i18n-aria="openFantasyBattleAria">
+                <img src="assets/fantasy-hearts/tactical-battle.webp" alt="Тактический бой в Fantasy Hearts" data-i18n-alt="fantasyBattleAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong data-i18n="tacticalBattle">Тактический бой</strong><small>Gameplay</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="Fantasy Hearts" data-lightbox-title="Versus" aria-label="Открыть экран противостояния Fantasy Hearts" data-i18n-aria="openFantasyVersusAria">
+                <img src="assets/fantasy-hearts/versus.webp" alt="Экран противостояния в Fantasy Hearts" data-i18n-alt="fantasyVersusAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong data-i18n="versusScreen">Противостояние</strong><small>PvP</small></span>
+              </button>
+              <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="Fantasy Hearts" data-lightbox-title="World Map" aria-label="Открыть карту мира Fantasy Hearts" data-i18n-aria="openFantasyWorldAria">
+                <img src="assets/fantasy-hearts/world-map.webp" alt="Карта мира Fantasy Hearts" data-i18n-alt="fantasyWorldAlt" loading="lazy" decoding="async" />
+                <span class="gallery-caption"><strong data-i18n="worldMap">Карта мира</strong><small>Meta</small></span>
+              </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--coral reveal" id="umnyashka-school">
+            <div class="project-number">03</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Appfox</span>
+                <span>2021 - 2022</span>
+              </div>
+              <h3 data-i18n="umnyashkaTitle">Школа умняшек</h3>
+              <p data-i18n="project3Description">
+                Образовательное приложение для детей 2-7 лет: архитектура, UI по Figma,
+                рефакторинг и публикация в стор.
+              </p>
+              <ul class="tag-list" aria-label="Технологии проекта" data-i18n-aria="technologiesAria">
+                <li>Unity</li><li>MVC</li><li>Addressables</li><li>Odin</li>
+              </ul>
+            </div>
+            <div class="project-action">
+              <a href="https://umnyashka-school.ru/" target="_blank" rel="noreferrer" aria-label="Открыть сайт Школы умняшек" data-i18n-aria="project3LinkAria">↗</a>
+            </div>
+            <div class="project-gallery-shell">
+              <div class="gallery-controls">
+                <button class="gallery-nav gallery-nav--prev" type="button" aria-label="Прокрутить галерею влево" data-i18n-aria="galleryPrevAria"><span aria-hidden="true">←</span></button>
+                <button class="gallery-nav gallery-nav--next" type="button" aria-label="Прокрутить галерею вправо" data-i18n-aria="galleryNextAria"><span aria-hidden="true">→</span></button>
+              </div>
+              <div class="project-gallery" aria-label="Галерея проекта Школа умняшек" data-i18n-aria="gallery3Aria" tabindex="0">
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand-key="umnyashkaTitle" data-lightbox-title-key="childRoom" aria-label="Открыть комнату ребёнка" data-i18n-aria="openChildRoomAria">
+                  <img src="assets/umnyashka/room.webp" alt="Комната ребёнка в приложении Школа умняшек" data-i18n-alt="childRoomAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="childRoom">Комната ребёнка</strong><small>Room</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand-key="umnyashkaTitle" data-lightbox-title-key="gameShop" aria-label="Открыть игровой магазин" data-i18n-aria="openGameShopAria">
+                  <img src="assets/umnyashka/shop.webp" alt="Игровой магазин приложения Школа умняшек" data-i18n-alt="gameShopAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="gameShop">Игровой магазин</strong><small>Animated</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand-key="umnyashkaTitle" data-lightbox-title-key="orderGame" aria-label="Открыть мини-игру Расставь по порядку" data-i18n-aria="openOrderGameAria">
+                  <img src="assets/umnyashka/order-game.webp" alt="Мини-игра Расставь по порядку" data-i18n-alt="orderGameAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="orderGame">Расставь по порядку</strong><small>Animated</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand-key="umnyashkaTitle" data-lightbox-title-key="letterGame" aria-label="Открыть мини-игру Нарисуй букву" data-i18n-aria="openLetterGameAria">
+                  <img src="assets/umnyashka/letter-game.webp" alt="Мини-игра Нарисуй букву" data-i18n-alt="letterGameAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="letterGame">Нарисуй букву</strong><small>Animated</small></span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--blue reveal" id="alt-city">
+            <div class="project-number">04</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Level26</span>
+                <span>2020 - 2021</span>
+              </div>
+              <h3>ALT CITY Online</h3>
+              <p data-i18n="project4Description">
+                Многопользовательский открытый мир: новый функционал, UI, рефакторинг и устранение
+                сложных игровых багов.
+              </p>
+              <ul class="tag-list" aria-label="Технологии проекта" data-i18n-aria="technologiesAria">
+                <li>Mirror</li><li>Firebase</li><li>Cinemachine</li><li>Animator</li>
+              </ul>
+            </div>
+            <div class="project-action">
+              <a href="https://alt-city-online.com/" target="_blank" rel="noreferrer" aria-label="Открыть сайт ALT CITY Online" data-i18n-aria="project4LinkAria">↗</a>
+            </div>
+            <div class="project-gallery-shell">
+              <div class="gallery-controls">
+                <button class="gallery-nav gallery-nav--prev" type="button" aria-label="Прокрутить галерею влево" data-i18n-aria="galleryPrevAria"><span aria-hidden="true">←</span></button>
+                <button class="gallery-nav gallery-nav--next" type="button" aria-label="Прокрутить галерею вправо" data-i18n-aria="galleryNextAria"><span aria-hidden="true">→</span></button>
+              </div>
+              <div class="project-gallery" aria-label="Галерея проекта ALT CITY Online" data-i18n-aria="gallery4Aria" tabindex="0">
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="ALT CITY Online" data-lightbox-title-key="altStreetRace" aria-label="Открыть экран уличной гонки ALT CITY" data-i18n-aria="openAltRaceAria">
+                  <img src="assets/alt-city/street-race.webp" alt="Уличная гонка в ALT CITY Online" data-i18n-alt="altRaceAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="altStreetRace">Уличная гонка</strong><small>Driving</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="ALT CITY Online" data-lightbox-title-key="altCityMission" aria-label="Открыть городскую миссию ALT CITY" data-i18n-aria="openAltMissionAria">
+                  <img src="assets/alt-city/city-mission.webp" alt="Городская миссия в ALT CITY Online" data-i18n-alt="altMissionAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="altCityMission">Городская миссия</strong><small>Open World</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="ALT CITY Online" data-lightbox-title-key="altShootout" aria-label="Открыть экран перестрелки ALT CITY" data-i18n-aria="openAltShootoutAria">
+                  <img src="assets/alt-city/shootout.webp" alt="Перестрелка в ALT CITY Online" data-i18n-alt="altShootoutAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="altShootout">Перестрелка</strong><small>Action</small></span>
+                </button>
+                <button class="gallery-shot" type="button" data-lightbox data-lightbox-brand="ALT CITY Online" data-lightbox-title-key="altGarage" aria-label="Открыть экран тюнинга автомобиля ALT CITY" data-i18n-aria="openAltGarageAria">
+                  <img src="assets/alt-city/garage.webp" alt="Тюнинг автомобиля в ALT CITY Online" data-i18n-alt="altGarageAlt" loading="lazy" decoding="async" />
+                  <span class="gallery-caption"><strong data-i18n="altGarage">Тюнинг</strong><small>Garage</small></span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">/ 02</p>
+            <h2 data-i18n="experienceTitle">Опыт работы</h2>
+          </div>
+          <p class="section-lead" data-i18n="experienceLead">
+            Рост от продуктовой разработки до технического лидерства и ответственности за архитектуру.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-row reveal">
+            <div class="timeline-date">
+              <span data-i18n="experience1Dates">Август 2022 - сейчас</span>
+              <small data-i18n="experience1Duration">4 года</small>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-title">
+                <div><p>1XGames</p><h3>Senior Unity Developer</h3></div>
+                <span data-i18n="remote">Удалённо</span>
+              </div>
+              <p data-i18n="experience1Text">
+                Разработка продукта с нуля, архитектура, координация команды, code review,
+                оптимизация, шейдеры и нативные плагины.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-row reveal">
+            <div class="timeline-date">
+              <span data-i18n="experience2Dates">Сентябрь 2021 - август 2022</span>
+              <small data-i18n="experience2Duration">1 год</small>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-title">
+                <div><p>Appfox</p><h3>Lead Unity Developer</h3></div>
+                <span data-i18n="moscow">Москва</span>
+              </div>
+              <p data-i18n="experience2Text">
+                Запуск проектов с нуля, архитектура, UI, публикация, аудит кода других команд,
+                консультации геймдизайнеров и оценка задач.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-row reveal">
+            <div class="timeline-date">
+              <span data-i18n="experience3Dates">Январь 2020 - сентябрь 2021</span>
+              <small data-i18n="experience3Duration">1 год 9 месяцев</small>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-title">
+                <div><p>Level26</p><h3>Unity Developer</h3></div>
+                <span data-i18n="product">Продукт</span>
+              </div>
+              <p data-i18n="experience3Text">
+                Разработка нового функционала для онлайн-игры с открытым миром, рефакторинг,
+                устранение багов и вёрстка интерфейсов.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container skills-section" id="skills">
+        <div class="section-heading section-heading--compact reveal">
+          <div>
+            <p class="section-index">/ 03</p>
+            <h2 data-i18n="skillsTitle">Навыки</h2>
+          </div>
+        </div>
+        <div class="skills-panel reveal" aria-label="Технические навыки" data-i18n-aria="skillsAria">
+          <div class="skills-grid">
+            <span>Unity</span><span>C#</span><span>SOLID</span><span>Clean Code</span>
+            <span>Client-Server</span><span>Mirror Networking</span><span>Addressables</span>
+            <span>UniTask</span><span>UniRx</span><span>Zenject</span><span>Firebase</span>
+            <span>Odin</span><span>DOTween</span><span>URP</span><span>Shaders</span>
+            <span>Unity Test Framework</span><span>Java</span><span>Kotlin</span><span>Git</span>
+            <span>CI/CD</span><span>ASP.NET</span><span>Entity Framework</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-inner reveal">
+          <p class="section-index">/ 04</p>
+          <p class="contact-kicker" data-i18n="contactKicker">Есть интересная задача или проект?</p>
+          <h2 data-i18n="contactTitle">Давайте обсудим.</h2>
+          <div class="contact-actions">
+            <a href="mailto:gulkanyangk@gmail.com">gulkanyangk@gmail.com <span>↗</span></a>
+            <a href="https://t.me/GevorgGulkanyan" target="_blank" rel="noreferrer">Telegram <span>↗</span></a>
+          </div>
+          <div class="contact-footer">
+            <span>© <span id="current-year">2026</span> Gevorg Gulkanyan</span>
+            <span data-i18n="builtWith">Спроектировано с вниманием к деталям</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="image-lightbox" id="image-lightbox" aria-label="Просмотр изображения" data-i18n-aria="galleryDialogAria">
+      <div class="lightbox-content">
+        <button class="lightbox-close" type="button" aria-label="Закрыть изображение" data-i18n-aria="closeGalleryAria">×</button>
+        <button class="lightbox-nav lightbox-nav--prev" type="button" aria-label="Предыдущий материал" data-i18n-aria="lightboxPrevAria"><span aria-hidden="true">←</span></button>
+        <button class="lightbox-nav lightbox-nav--next" type="button" aria-label="Следующий материал" data-i18n-aria="lightboxNextAria"><span aria-hidden="true">→</span></button>
+        <img class="lightbox-image" src="" alt="" />
+        <video class="lightbox-video" src="" muted loop autoplay playsinline controls hidden></video>
+        <div class="lightbox-caption">
+          <span id="lightbox-brand">1XGames</span>
+          <strong id="lightbox-title"></strong>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
