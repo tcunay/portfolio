@@ -118,6 +118,7 @@ const translations = {
     skillsTools: "Инструменты и интеграции",
     contactKicker: "Есть интересное предложение?",
     contactTitle: "Давайте обсудим.",
+    heartPortraitAlt: "Пиксельный персонаж Геворга Гулканяна показывает сердце руками",
     builtWith: "Спроектировано с вниманием к деталям",
   },
   en: {
@@ -239,6 +240,7 @@ const translations = {
     skillsTools: "Tools & integrations",
     contactKicker: "Have an interesting opportunity?",
     contactTitle: "Let's talk.",
+    heartPortraitAlt: "Pixel-art character of Gevorg Gulkanyan making a heart with his hands",
     builtWith: "Designed with attention to detail",
   },
 };

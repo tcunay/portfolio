@@ -1089,6 +1089,14 @@ body.lightbox-open {
   color: #fff;
 }
 
+.contact-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  column-gap: clamp(32px, 6vw, 84px);
+}
+
 .contact-section::after {
   position: absolute;
   right: -40px;
@@ -1100,16 +1108,22 @@ body.lightbox-open {
 }
 
 .contact-section .section-index {
+  grid-column: 1;
+  grid-row: 1;
   color: rgba(255, 255, 255, 0.76);
 }
 
 .contact-kicker {
+  grid-column: 1;
+  grid-row: 2;
   margin: 42px 0 12px;
   font-size: 15px;
   font-weight: 700;
 }
 
 .contact-section h2 {
+  grid-column: 1;
+  grid-row: 3;
   max-width: 900px;
   font-size: clamp(56px, 9vw, 128px);
   line-height: 0.95;
@@ -1117,6 +1131,8 @@ body.lightbox-open {
 
 .contact-actions {
   display: flex;
+  grid-column: 1;
+  grid-row: 4;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 50px;
@@ -1141,8 +1157,27 @@ body.lightbox-open {
   transform: translateY(-2px);
 }
 
+.contact-visual {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  width: 100%;
+  max-width: 340px;
+  align-self: end;
+  justify-self: end;
+}
+
+.contact-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 92%, transparent 100%);
+}
+
 .contact-footer {
   display: flex;
+  grid-column: 1 / -1;
+  grid-row: 5;
   justify-content: space-between;
   gap: 24px;
   margin-top: 110px;
@@ -1228,6 +1263,16 @@ body.lightbox-open {
   .skills-groups { grid-template-columns: 1fr; gap: 28px; }
   .skills-grid { gap: 8px; }
   .skills-grid span { min-height: 42px; padding-inline: 13px; }
+  .contact-section { padding-top: 72px; }
+  .contact-inner {
+    grid-template-columns: minmax(0, 1fr) clamp(105px, 28vw, 150px);
+    column-gap: 12px;
+  }
+  .contact-section .section-index { grid-column: 1; grid-row: 1; }
+  .contact-kicker { grid-column: 1; grid-row: 2; }
+  .contact-section h2 { grid-column: 1 / -1; grid-row: 3; margin-top: 24px; }
+  .contact-actions { grid-column: 1 / -1; grid-row: 4; }
+  .contact-visual { grid-column: 2; grid-row: 1 / span 2; align-self: start; }
   .contact-footer { flex-direction: column; margin-top: 80px; }
 }
 
