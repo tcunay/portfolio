@@ -1093,7 +1093,7 @@ body.lightbox-open {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 340px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
   column-gap: clamp(32px, 6vw, 84px);
 }
 
@@ -1161,7 +1161,7 @@ body.lightbox-open {
   grid-column: 2;
   grid-row: 1 / span 4;
   width: 100%;
-  max-width: 340px;
+  max-width: 390px;
   align-self: end;
   justify-self: end;
 }
